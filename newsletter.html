@@ -6,18 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alura Newsletter</title>
+    <!-- Primeiro importar. Linha abaixo -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Segundo, interpreta o que há dentro do arquivo. Função da linha abaixo
+     -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        azul: {
+                            claro: '#C5DFFF',
+                            escuro: '#061E3C',
+                            hover: '#1057B0',
+                        }
+                    },
+                    fontFamily: {
+                        inter: ['inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body class="">
+<body class="bg-azul-claro font-inter flex justify-center items-center h-screen">
 
-    <main class="">
+    <main class="flex">
 
-        <section class="">
+        <section class="bg-azul-escuro hidden">
             <img class="" src="image/icone-mergulhador.svg" alt="icone de mergulhador">
         </section>
 
-        <section class="">
+        <section class="bg-white">
 
             <div class="">
                 <svg class=""
